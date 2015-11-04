@@ -1,1 +1,1 @@
-web: lein trampoline run
+web: node main.js
