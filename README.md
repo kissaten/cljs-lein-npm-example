@@ -5,7 +5,7 @@ reactjs/reagent and Kioo templates, demonstrating "isomorphic" clojurescript
 shared between frontend and backend and Figwheel hotloading code changes
 to both.
 
-Check it out at https://cljsnode.herokuapp.com
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 Fork on github as a starting point for your own projects.
 A goal is to turn this into a Leiningen template.
