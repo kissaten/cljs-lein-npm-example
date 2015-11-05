@@ -1,4 +1,4 @@
-# cljsnode
+# cljs lein-npm example
 
 Clojurescript based reference SPA on Heroku using node express, bootstrap,
 reactjs/reagent and Kioo templates, demonstrating "isomorphic" clojurescript
