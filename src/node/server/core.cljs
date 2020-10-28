@@ -13,11 +13,9 @@
 (def express (nodejs/require "express"))
 
 (defn handler [req res]
-  (if (= "https" (aget (.-headers req) "x-forwarded-proto"))
-    (.redirect res (str "http://" (.get req "Host") (.-url req)))
-    (go
-      (.set res "Content-Type" "text/html")
-      (.send res (<! (static-page))))))
+  (go
+    (.set res "Content-Type" "text/html")
+    (.send res (<! (static-page)))))
 
 (defn server [port success]
   (doto (express)
