@@ -6,8 +6,8 @@
    [app.json :as json :refer [fetch-json]]
    [goog.string :as gstring]))
 
-(def endpoint {:url "http://api.icndb.com/jokes/random"
-               :extract #(get-in % ["value" "joke"]) })
+(def endpoint {:url "https://api.chucknorris.io/jokes/random"
+               :extract #(get-in % ["value"]) })
 
 (defn fresh-jokes
   "Channel buffering collections of n jokes from The Internet Chuck Norris Database"
